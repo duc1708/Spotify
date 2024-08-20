@@ -1,0 +1,92 @@
+.list_music{
+    width: 100%;
+    display: inline-flex;
+    background-color: #000;
+    margin: 0;
+}
+
+body{
+    background-color: #000;
+}
+
+.home_search{
+    color: #fff;
+    height: 96px;
+    width: 200px;
+    background-color: #121212;
+    padding: 20px 50px 20px 50px;
+    border-radius: 20px;
+}
+
+.list_singer{
+    margin-top: 50px;
+    height: 700px;
+    width: 300px;
+    background-color: #121212;
+    border-radius: 20px;
+}
+
+
+.list_singer button{
+    margin-top: 80px;
+    margin-left: 50px;
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #242323;
+}
+
+
+
+.inline_flex{
+    display: inline-flex;
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.inline_flex img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    margin-right: 50px;
+
+}
+
+.inline_flex:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+ul{
+    list-style: none;
+}
+
+
+
+.song{
+    display: inline-flex;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.song img{
+    width: 100px;
+    margin-right: 50px;
+}
+
+.song p{
+    color: #fff;
+    margin-right: 50px;
+    width: 200px;
+}
+
+
+.hiden{
+    display: none;
+}
