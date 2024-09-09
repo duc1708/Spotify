@@ -1,0 +1,294 @@
+:root {
+    --primary-color: #12b350;
+    --text-color: #fff;
+}
+
+
+#home:hover{
+    cursor: pointer;
+    color: #317431;
+}
+
+#search:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+}
+.list_music{
+    width: 100%;
+    display: inline-flex;
+    background-color: #000;
+    margin: 0;
+    height: 530px;
+}
+
+.list_music .left{
+    width: 25%;
+}
+
+.list_music .center{
+    width: 55%;
+    background-image: url(https://manybackgrounds.com/images/hd/spotify-neon-green-sw8td453uh40k0j7.jpg);
+    overflow: auto; /* Tạo thanh cuộn khi nội dung vượt quá chiều cao */
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.list_music .center::-webkit-scrollbar {
+    width: 5px; /* Chiều rộng của thanh cuộn */
+}
+
+.list_music .center::-webkit-scrollbar-thumb {
+    background-color: rgba(73, 72, 72, 0.5); /* Màu của đốt thanh cuộn */
+}
+.list_music .center:-webkit-scrollbar-track {
+    background: transparent; /* Màu nền của thanh cuộn */
+}
+
+.list_music .center .songList{
+    background-color: rgb(15 18 15 / 53%);
+    margin-top: 200px;
+}
+
+
+body{
+    background-color: #000;
+}
+
+.home_search{
+    color: #fff;
+    height: 96px;
+    width: 200px;
+    background-color: #121212;
+    padding: 20px 50px 20px 50px;
+    border-radius: 20px;
+}
+
+.list_singer{
+    margin-top: 50px;
+    width: 300px;
+    background-color: #121212;
+    border-radius: 20px;
+    height: 64%;
+    overflow: auto; /* Tạo thanh cuộn khi nội dung vượt quá chiều cao */
+}
+
+
+.list_singer::-webkit-scrollbar {
+    width: 10px; /* Chiều rộng của thanh cuộn */
+    height: 10px;
+}
+
+.list_singer::-webkit-scrollbar-thumb {
+    background-color: rgba(73, 72, 72, 0.5); /* Màu của đốt thanh cuộn */
+}
+.list_singer:-webkit-scrollbar-track {
+    background: transparent; /* Màu nền của thanh cuộn */
+}
+
+.list_singer button{
+    margin-top: 80px;
+    margin-left: 50px;
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #242323;
+}
+
+.singer{
+    display: inline-flex;
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.singer img{
+    width: 65px;
+    height: 60px;
+    border-radius: 50px;
+    margin-right: 50px;
+
+}
+
+.singer:hover{
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+.song{
+    display: inline-flex;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.song img{
+    width: 15%;
+    margin-right: 150px;
+}
+
+.song p{
+    color: #fff;
+    margin-right: 50px;
+    width: 200px;
+}
+
+.hiden{
+    display: none;
+}
+.song.active p {
+    color: var(--primary-color);
+}
+
+.song:hover{
+    cursor: pointer;
+}
+
+/*  */
+.cd {
+    display: flex;
+}
+  
+.cd-thumb {
+    width: 7%;
+    border-radius: 50%;
+    background-size: cover;
+    height: 15vh;
+    background-repeat: no-repeat;
+    margin-right: 35px;
+}
+
+.infor{
+    color: #fff;
+    width: 215px;
+}
+
+/* PLAYER */
+
+  
+.player .icon-pause {
+    display: none;
+}
+  
+.player.playing .icon-pause {
+    display: inline-block;
+}
+  
+.player.playing .icon-play {
+    display: none;
+}
+
+ /* CONTROL */
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px 0 8px 0;
+    margin-left: 15%;
+}
+  
+.control .btn {
+    color: #726c6c;
+    padding: 18px;
+    font-size: 18px;
+}
+
+.control .btn :hover{
+    cursor: pointer;
+    color: #fff;
+}
+  
+.control .btn.active {
+    color: var(--primary-color);
+}
+  
+.control .btn-toggle-play {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.progress{
+    width: 100%;
+    -webkit-appearance: none;
+    height: 2px;
+    background: #fff;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+  
+.progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 6px;
+    cursor: pointer;
+    background-color: rgb(12, 182, 12);
+}
+
+.bonus{
+    background-color: #000;
+    height: 500px;
+    margin-top: -3%;
+}
+
+.addSinger {
+    position: relative;
+    top: -60%;
+    left: 30%;
+    height: 27px;
+    width: 76px;
+    border: none;
+    background-color: #317431;
+}
+
+img#avt {
+    height: 178px;
+}
+
+.box_singer img:hover{
+    opacity: 0.5;
+}  
+
+.box_singer button {
+    display: none;
+}
+
+.box_singer:hover button {
+    display: block;
+}
+
+/*  */
+
+.right{
+    overflow: auto;
+}
+
+.albums:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.right::-webkit-scrollbar {
+    width: 5px; /* Chiều rộng của thanh cuộn */
+}
+
+.right::-webkit-scrollbar-thumb {
+    background-color: rgba(73, 72, 72, 0.5); /* Màu của đốt thanh cuộn */
+}
+.right:-webkit-scrollbar-track {
+    background: transparent; /* Màu nền của thanh cuộn */
+}
+
+
+  
